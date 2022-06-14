@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+  div {
+    width: 100px;
+    height: 50px;
+    border: 2px solid red;
+  }
+
+
+  .a1 {
+    /* 参数：
+      过渡动画的模拟属性
+      完成过渡所使用的时间
+      过渡函数
+      过渡开始出现的延迟
+      */
+    transition: width 2s linear 1s;
+  }
+
+  div:hover {
+    /*触发div变宽*/
+    width: 300px; 
+  }
+</style>
+
+<body>
+  <div class="a1">hello</div>
+</body>
+
+</html>

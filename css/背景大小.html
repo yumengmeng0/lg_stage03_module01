@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景大小</title>
+</head>
+<style>
+  div {
+    background: url(img/1.jpg) no-repeat;
+    width: 200px;
+    height: 100px;
+    border: 2px solid red;
+    margin: 20px;
+  }
+
+  .a1 {
+    /*完全覆盖*/
+    background-size: cover;
+  }
+
+  .a2 {
+    /*完全适应*/
+    background-size: contain;
+  }
+</style>
+
+<body>
+
+  <div class="a1"></div>
+  <div class="a2"></div>
+
+
+</body>
+
+</html>

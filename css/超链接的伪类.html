@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超链接的伪类</title>
+</head>
+<style>
+  a:link {
+    color: #ff0000;
+  }
+
+  a:visited {
+    color: #0f0;
+  }
+
+  a:hover {
+    color: #f0f;
+  }
+
+  a:active {
+    color: #00f;
+  }
+
+  /* 过滤所有li中的第一个 */
+  li:first-child{
+    color: pink;
+  }
+</style>
+
+<body>
+  <!--
+    css伪类可以对css选择器添加一些特殊效果
+    伪类属性：
+      :active 向被激活的元素添加样式
+      :hover  鼠标悬浮在元素上方时，向元素添加样式
+      :link   向未被访问的链接添加样式
+      :visited  向已被访问的链接添加样式
+      :first-child  向元素第一个子元素添加样式
+  -->
+
+
+  <a href="http://www.baidu.com">百度</a>
+
+
+  <ul>
+    <li>斗罗大陆</li>
+    <li>斗罗大陆</li>
+    <li>斗罗大陆</li>
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位-相对</title>
+</head>
+<style>
+  .a {
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+  }
+
+  .aa,
+  .ab,
+  .ac {
+    width: 200px;
+    height: 60px;
+  }
+
+  .aa {
+    background-color: red;
+
+  }
+
+  .ab {
+    background-color: green;
+    /*相对定位（相对原来的位置）*/
+    position: relative;
+    /*上偏移*/
+    top: 30px;
+    /*左偏移*/
+    left: 50px;
+
+  }
+
+  .ac {
+    background-color: blue;
+
+  }
+</style>
+
+<body>
+
+  <!--
+    3.相对定位
+  -->
+
+  <div class="a">
+    <div class="aa"></div>
+    <div class="ab"></div>
+    <div class="ac"></div>
+  </div>
+</body>
+
+</html>

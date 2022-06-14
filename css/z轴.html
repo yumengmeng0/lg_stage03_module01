@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 80px;
+  }
+
+  .a1 {
+    background: blue;
+    position: relative;
+    z-index: 1;
+  }
+
+  .a2 {
+    background: pink;
+    position: relative;
+    top: -20px;
+    left: 30px;
+    z-index: 0;
+  }
+</style>
+
+<body>
+  <!--
+    z轴属性要配合相对或绝对定位来使用，z的值相对大的在上面
+  -->
+
+  <div class="a1"></div>
+  <div class="a2"></div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>派生选择器</title>
+</head>
+
+<style>
+  /*
+  div p ：div下的所有p节点都会被选取，忽略层级
+  div>p ：div的子集元素p被选取，只选1级
+  */
+  /* div p{
+    color: red;
+  } */
+
+  div>p{
+    color: red;
+  }
+</style>
+
+<body>
+
+  div有3个孩子，p、p、span <br>
+
+  <div>
+    <p>数学</p>
+    <p>语文</p>
+    <span>
+      <p>古诗词</p>
+      <p>文言文</p>
+    </span>
+  </div>
+
+</body>
+
+</html>

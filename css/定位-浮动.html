@@ -1,0 +1,52 @@
+3
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位-浮动</title>
+</head>
+<style>
+  .a {
+    width: 300px;
+    height: 300px;
+    border: 5px solid black;
+  }
+
+  .aa,
+  .ab {
+    width: 80px;
+    height: 81px;
+  }
+  .aa{
+    background-color: red;
+    float: left;
+    margin: 10px;
+
+  }
+
+  .ab{
+    background-color: blue;
+    float: right;
+    margin: 10px;
+
+  }
+</style>
+
+<body>
+
+  <!--
+    2.浮动定位
+    * 消除块级元素独占一行的特性
+  -->
+  <hr>
+
+  <div class="a">
+    <div class="aa"></div>
+    <div class="ab"></div>
+  </div>
+</body>
+
+</html>

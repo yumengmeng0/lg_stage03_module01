@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位-绝对</title>
+</head>
+<style>
+  .yeye {
+    width: 400px;
+    height: 400px;
+    background: olive;
+  }
+
+  .baba {
+    width: 300px;
+    height: 200px;
+    background: black;
+    padding: 30px;
+  }
+
+  .g {
+    width: 400px;
+    height: 400px;
+    background: pink;
+    padding: 30px;
+  }
+
+  .a1 {
+    width: 300px;
+    height: 200px;
+    background: black;
+  }
+</style>
+
+<body>
+
+  <!--
+    4.绝对对定位
+      本元素与已定位的祖先元素的距离。
+      * 如果父级元素定位了，就以父级为参照物
+      * 如果父级没定位，找爷爷级，爷爷定位了，以爷爷为参造物
+      * 如果爷爷没定位，继续向上找，都没定位，body是最终选择
+  -->
+
+  <div class="yeye">
+    <div class="baba">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+    </div>
+  </div>
+
+
+
+  <div class="g">
+    <div class="a1">
+      <div class="a"></div>
+      <div class="b"></div>
+      <div class="c"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景位置</title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 80px;
+    margin: 20px;
+    border: 10px dashed black;
+    padding: 20px;
+    background: url(img/1.jpg) no-repeat;
+  }
+
+  .a1 {
+    /*背景贴边框的编*/
+    background-origin: border-box;
+  }
+
+  .a2 {
+    /*背景贴内边框的边*/
+    background-origin: padding-box;
+  }
+
+  .a3 {
+    /*背景贴内容的边*/
+    background-origin: content-box;
+  }
+</style>
+
+<body>
+  <!--
+    背景位置
+    背景裁切
+    背景大小
+  -->
+  <div></div>
+  <div class="a1"></div>
+  <div class="a2"></div>
+  <div class="a3"></div>
+
+</body>
+
+</html>
