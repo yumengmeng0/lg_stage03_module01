@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>表格</title>
+  </head>
+  <body>
+    <!-- 
+      cellspacing：单元格间距，通常设置0表示单线表格
+     -->
+  简单的表格<hr>
+  <table border="3" width="400px" align="center" cellspacing="5">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+  </table>
+
+  复杂的表格<hr>
+  <table border="3" width="400px" align="center" cellspacing="0">
+    <tr >
+      <td colspan="3" align="center">合并3列</td>
+    </tr>
+    <tr>
+      <td rowspan="3">合并3行</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <!-- <td>44</td> -->
+      <td>55</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <!-- <td>4444</td> -->
+      <td>5555</td>
+      <td>6666</td>
+    </tr>
+  </table>
+  </body>
+</html>

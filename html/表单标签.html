@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <title>表单</title>
+</head>
+
+<body>
+  <!-- 
+      action：服务器地址
+      method：提交方式GET/POST
+
+      get：提交时传输数据量少，明文提交
+      post：提交时数传输据量大，密文提交
+     -->
+  <form action="" method="get">
+    <p>帐号：<input type="text" placeholder="请输入帐号" maxlength="11" /></p>
+    <p>密码：<input type="password" placeholder="请输入密码" /></p>
+    <p>
+      爱好：
+      <input type="checkbox" name="hobby" value="smoke" />抽烟
+      <input type="checkbox" checked="checked" name="hobby" value="drink" />喝酒
+      <input type="checkbox" name="hobby" value="perm"/>烫头
+    </p>
+    <p>
+      性别：
+      <input type="radio" name="sex" value="male" />男
+      <input type="radio" name="sex" checked="checked" value="female" />女
+    </p>
+    <p>
+      <input type="file">
+    </p>
+
+    <p>
+      血型：
+      <select>
+        <option name="bloodtype" value="A">A</option>
+        <option name="bloodtype" value="B">B</option>
+        <option name="bloodtype" value="AB">AB</option>
+        <option name="bloodtype" value="O" selected="selected">O</option>
+      </select>
+    </p>
+
+    <p>
+      个人简介：
+      <textarea cols="30" rows="3"></textarea>
+    </p>
+
+    <p>
+      <input type="reset" value="清空（默认是重置）">
+    </p>
+    <p>
+      <input type="submit" value="提交信息">
+    </p>
+    <p>
+      <input type="button" value="普通按钮">
+    </p>
+    <!-- 
+        在form表单中button和 <input type="submit" > ,在form表单外是普通按钮
+      -->
+    <button>保存</button>
+  </form>
+  <button>form标签外的普通按钮</button>
+</body>
+
+</html>

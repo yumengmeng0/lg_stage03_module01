@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H5新特性</title>
+</head>
+<body>
+
+  <h1><mark>高亮</mark>显示</h1>
+  联想输入框
+  <input list = "citys">
+  <datalist id="citys">
+    <option value="北京"></option>
+    <option value="上海"></option>
+    <option value="南京"></option>
+  </datalist>
+
+  <!--
+    h5新增语义化标签（div）：
+      section标签：页面中的内容区域，页面的主体部分
+      article：文章
+      aside：文章内容之外，标题
+      header：头部页眉
+      hgroup：内容与标题的结合
+      nav：导航
+      figure：图文
+      foot：页脚
+  -->
+  <section>
+    <article>
+      <aside></aside>
+      <figure></figure>
+    </article>
+  </section>
+  
+  <!--
+    媒体标签
+  -->
+  <!-- <video src="img/html-css-js之间的关系.mp4" controls loop autoplay></video> -->
+
+  <!--
+    新增表单控件
+  -->
+  <form>
+    <input type="color">color<br>
+    <input type="date">date<br>
+    <input type="datetime">datetime<br>
+    <input type="datetime-local">datetime-local<br>
+    <input type="month">month<br>
+    <input type="week">week<br>
+    <input type="number" min="1" max="100" step="2">number<br>
+    <input type="range" min="1" max="100" step="2">range<br>
+    <input type="search" >search<br>
+
+    <progress></progress>progress<br>
+  </form>
+</body>
+</html>
