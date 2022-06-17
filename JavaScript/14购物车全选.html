@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function selectAll(all) {
+            var nums = document.getElementsByName("num");
+            for (var i = 0; i < nums.length; i++) {
+                nums[i].checked = all.checked;
+            }
+
+        }
+    </script>
+
+    <h1>购物车</h1>
+    <table border="1" cellspacing="0">
+        <tr>
+            <td><input type="checkbox" onchange="selectAll(this)"> 全选</td>
+            <td>名称</td>
+            <td>单价</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="num">1</td>
+            <td>红牛</td>
+            <td>6.00</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="num">2</td>
+            <td>脉动</td>
+            <td>5.00</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="num">3</td>
+            <td>可乐</td>
+            <td>3.00</td>
+        </tr>
+    </table>
+    <p><button>提交订单</button></p>
+</body>
+
+</html>

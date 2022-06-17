@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 创建对象的三种方式
+        var user = new Object();
+        user.name = "张三";
+        user.age = 18;
+        user.say = function () {
+            console.log(this.name + "say hi");
+        }
+
+        user.say();
+
+        // 使用构造函数
+        function userinfo(name, age) {
+            this.name = name;
+            this.age = age;
+            this.say = function () {
+                console.log(this.name + "say hi");
+            }
+        }
+
+        var user1 = new userinfo("李四", 22);
+        user1.say();
+
+        // 使用直接量
+        var user2 = {
+            name: "王五",
+            age: 23,
+            say: function () {
+                console.log(this.name + "say hi");
+            }
+        };
+
+        user2.say();
+    </script>
+</body>
+
+</html>

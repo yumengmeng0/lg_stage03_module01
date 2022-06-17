@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1  id="hello">DOM修改页面</h1>
+
+    <button onclick="test()">点击改变标题内容</button>
+    <button onclick="changeStyle()">点击改变标题颜色</button>
+  
+    <script>
+        function test() {
+            document.getElementById("hello").innerHTML = "改变内容";
+        }
+
+        function changeStyle() {
+            // 改变样式
+            document.getElementById("hello").style.color = "red";
+        }
+    </script>
+</body>
+
+</html>

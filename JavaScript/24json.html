@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var json1 = {
+            "username": "张三",
+            "age": 22
+        };
+
+        // json数组
+        var json_arr = [{
+            "username": "张三",
+            "age": 22
+        },
+        {
+            "username": "李四",
+            "age": 22
+        }];
+
+        console.log(json_arr[0].username)
+        console.log(json_arr[1].username)
+
+        // 复杂json对象
+        var man = {
+            "username": "李四",
+            "age": 22,
+            "hobby": ["抽烟", "喝酒", "烫头"]
+        };
+
+        console.log(man.hobby[1]);
+
+    </script>
+</body>
+
+</html>

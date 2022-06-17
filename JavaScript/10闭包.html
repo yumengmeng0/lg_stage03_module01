@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = 10; // 全局变量（全局变量声明时，可以不使用var）
+        function test1() {
+            b = 5; // 不使用var声明的变量就是全局变量
+            var c = 6; // 局部变量
+            console.log(a);
+        }
+
+        function test2() {
+            console.log(b);
+        }
+
+        function test3() {
+            // console.log(c); // 不能访问test1函数的局部变量c c is not defined
+        }
+
+
+        test1();
+        test2();
+        test3();
+
+
+    </script>
+</body>
+
+</html>

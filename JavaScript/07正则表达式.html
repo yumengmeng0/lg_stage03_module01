@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = "18"; // 判断1-3位纯数字
+        var reg = /^\d{1,3}$/;
+        var b = reg.test(age);
+        if (b == true) {
+            console.log("年龄合法");
+        } else {
+            console.log("年龄不合法");
+        }
+
+        var name = "name——"; // 大小写字母和数字组合，不能出现特殊字符，5-8位
+        var reg_name = new RegExp("^[a-zA-Z]{5,8}$");
+   
+        if (reg_name.test(name)) {
+            console.log("姓名合法");
+        } else {
+            console.log("姓名不合法");
+        }
+    </script>
+</body>
+
+</html>

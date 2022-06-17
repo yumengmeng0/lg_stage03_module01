@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 1. 本地储存
+    // 3种赋值方式
+    localStorage.setItem("name", "张三");
+    localStorage["age"] = 22;
+    localStorage.sex = "男";
+
+    var name = localStorage.getItem("name");
+    console.log("name = " + name + ",age = " + localStorage["age"] + ",sex = " + localStorage.sex);
+    localStorage.removeItem("name");
+    name = localStorage.getItem("name");
+    console.log(name);
+
+    // 2. 会话储存
+    sessionStorage.setItem("name", "张三");
+    sessionStorage.removeItem("name");
+    sessionStorage.clear();
+
+    
+  </script>
+</body>
+
+</html>

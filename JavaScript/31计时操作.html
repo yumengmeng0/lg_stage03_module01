@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 id="title">hello</h1>
+
+  <img src="img/logo.png" id="img">
+  <br>
+  <button onclick="start()">开始</button>
+  <button onclick="stop()">停止</button>
+
+  <script>
+
+
+    var colors = ["red", "blue", "green", "pink", "black", "yellow"];
+    var i = 0;
+    function changecolor() {
+      document.getElementById("title").style.color = colors[i++];
+      if (i == colors.length) {
+        i = 0;
+      }
+    }
+
+    setInterval(changecolor, 100); // 周期性定时器
+
+    function time() {
+      var date = new Date();
+      var timestr = date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDay() + "日" + date.getHours() + "时"
+        + date.getHours() + "分" + date.getSeconds() + "秒";
+      document.getElementById("title").innerHTML = timestr;
+    }
+
+    setInterval(time, 1000);
+
+
+
+    var arr = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+    function start() {
+      timer = setInterval(changeimg, 100); // timer是全局变量
+    }
+
+    function stop() {
+      clearInterval(timer); // 停止定时器
+    }
+
+    function changeimg() {
+      var i = Math.floor(Math.random() * arr.length); // 0-4
+      document.getElementById("img").src = "img/" + arr[i];
+    }
+
+
+    // 一次性定时器
+
+    function onetime() { 
+      document.body.style.backgroundColor = "pink";
+    }
+
+    setTimeout(onetime, 3000);
+
+  </script>
+</body>
+
+</html>

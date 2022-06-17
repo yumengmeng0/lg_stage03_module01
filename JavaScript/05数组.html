@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 数组的三种创建方式
+        // var arr = new Array();
+        // arr[0] = 1;
+        // arr[1] = 2;
+        // arr[2] = 3;
+        // for (var i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+
+        // var arr1 = new Array(1, "hello", true);
+        // for (var i = 0; i < arr.length; i++) {
+        //     console.log(arr1[i]);
+        // }
+
+        // var arr2= [3, "hello1", true];
+        // for (var i = 0; i < arr.length; i++) {
+        //     console.log(arr2[i]);
+        // }
+
+        // 数组常用方法
+        // var arr_string = [1, 2, 3, 4];
+        // // 数组转字符串
+        // console.log(arr_string.toString());   // 1,2,3,4
+
+        // console.log(arr_string.join("-"));      // 1-2-3-4
+
+        // console.log(arr_string.concat(5, 6));   // 1, 2, 3, 4, 5, 6
+        // console.log(arr_string.slice(2, 4));    // 3, 4
+        // console.log(arr_string.reverse());      // 4, 3, 2, 1
+
+        var arr = [31, 111, 12, 444];
+        // arr.sort(); // 按字符排序
+        // console.log(arr); // 111, 12, 31, 444
+        // arr.sort();
+
+        function compare(a, b) {
+            return a - b;
+        }
+        arr.sort(compare); // 按数值排序
+        console.log(arr); // 12, 31, 111, 444
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="add()">添加图片</button>
+    <button onclick="del()">删除图片</button>
+    <button onclick="replace()">替换图片</button>
+    <div>
+
+    </div>
+
+
+    <script>
+        function add() {
+            var img = document.createElement("img"); // 创建<img>标签
+            img.setAttribute("src", "../html/img/cat.gif");
+            img.setAttribute("title", "小猫");
+            img.setAttribute("id", "cat");
+
+            var div = document.getElementsByTagName("div")[0];
+            div.append(img); // 向第1个div标签内添加img
+        }
+
+        function del() {
+            // 删除标签
+            //document.getElementById("cat").remove();
+            var img = document.getElementById("cat");
+            img.parentNode.removeChild(img); // 通过父节点删除子节点
+        }
+
+        // 修改节点
+        function replace() {
+            // 方法1.修改节点属性
+            // var img = document.getElementById("cat");
+            // img.setAttribute("src", "../html/img/1.jpg");
+
+            // 方法2：替换节点
+            var cat = document.getElementById("cat");
+            var img = document.createElement("img");
+            img.setAttribute("src", "../html/img/1.jpg");
+            cat.parentNode.replaceChild(img, cat);
+        }
+    </script>
+</body>
+
+</html>
